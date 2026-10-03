@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from contextlib import asynccontextmanager
 from app.database import Base, engine
 from app.routers import auth, employees
-from middleware import LoggingMiddleware
+from app.middleware import LoggingMiddleware
 
 
 @asynccontextmanager
